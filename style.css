@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+*::selection{
+    color: white;
+    background: #02DDA8;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #02DDA8;
+}
+
+.main {
+  width: 40%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.299);
+}
+.search {
+  padding: 10px 30px;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  height: 80px;
+  align-items: center;
+}
+
+.search-bar {
+  width: 70%;
+}
+.search-bar input {
+  font-size: 15px;
+  height: 40px;
+  width: 100%;
+  border: none;
+  border-style: none;
+  background-color: white;
+  border-bottom: 2px solid #02DDA8;
+  padding: 0px 3px;
+  text-decoration: none;
+}
+.search-bar input:focus-visible {
+  outline: none;
+}
+
+.search-btn {
+  width: 20%;
+}
+.search-btn button {
+  width: 100%;
+  background-color: #02DDA8;
+  color: white;
+  height: 40px;
+  border-radius: 1.5em;
+  border-style: none;
+  font-size: 15px;
+}
+
+.result {
+  /* padding: 0px 43px 20px; */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.result h2 {
+  text-align: center;
+  color: rgba(255, 32, 32, 0.705);
+  font-size: 18px;
+  font-weight: 450;
+}
+
+.flag {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 20px 0px 5px;
+}
+
+.flag img {
+  border-radius: 10px;
+  width: 45%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.105);
+}
+
+h3 {
+  align-items: center;
+  text-align: center;
+  padding: 5px;
+  letter-spacing: 1.5px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.det {
+  display: flex;
+  gap: 10px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .main {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .main {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+
+    align-items: center;
+    flex-direction: column;
+  }
+  .search-bar{
+    width: 50%;
+  }
+  .search-btn{
+    width: 30%;
+  }
+  .details {
+    gap: 20px;
+  }
+  .det {
+    display: flex;
+    flex-direction: column;
+  }
+}
